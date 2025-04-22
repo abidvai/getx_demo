@@ -17,8 +17,8 @@ class ProductView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            child: const Text('Product List: ', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)),
+            const Padding(padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            child: Text('Product List: ', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)),
             Obx(
               () {
                 return Expanded(

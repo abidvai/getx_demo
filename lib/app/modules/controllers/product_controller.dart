@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_demo/app/modules/models/product_model.dart';
 
