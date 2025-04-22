@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:getx_demo/app/modules/controllers/cart_controller.dart';
+import 'package:getx_demo/app/bindings/product_binding.dart';
 import 'package:getx_demo/app/modules/views/cart_view.dart';
 import 'package:getx_demo/app/modules/views/product_details_view.dart';
 import 'package:getx_demo/app/modules/views/product_view.dart';
@@ -10,14 +10,13 @@ class AppPages {
     GetPage(
         name: Routes.Product,
         page: () => ProductView(),
+      binding: ProductBinding()
     ),
     GetPage(
         name: Routes.ProductDetails,
         page: () => ProductDetailsView(),
       transition: Transition.circularReveal,
-      binding: BindingsBuilder(() {
-        Get.lazyPut<CartController>(() => CartController());
-      })
+      binding: ProductBinding()
     ),
     GetPage(
         name: Routes.Cart,
